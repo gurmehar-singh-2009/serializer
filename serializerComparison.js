@@ -5,19 +5,19 @@ var serializer_1 = require("./serializer");
 // encode speed test
 var msgpackstart = performance.now();
 for (var i = 0; i < 1000000; i++) {
-    msgpack.encode("mashallah");
+    msgpack.encode("Test data.");
 }
 console.log("msgpack-lite encode speed ".concat((performance.now() - msgpackstart), "ms"));
 var mystart = performance.now();
 for (var i = 0; i < 1000000; i++) {
-    serializer_1.default.encode("mashallah");
+    serializer_1.default.encode("Test data.");
 }
 console.log("my encode speed ".concat((performance.now() - mystart), "ms"));
 // size test
 console.log("msgpack-lite encode size ".concat(msgpack.encode("mashallah").length, " bytes"));
 console.log("my encode size ".concat(serializer_1.default.encode("mashallah").length, " bytes"));
-var mss = msgpack.encode("mashallah");
-var myy = serializer_1.default.encode("mashallah");
+var mss = msgpack.encode("Test data.");
+var myy = serializer_1.default.encode("Test data.");
 // decode speed test
 var msgpackstartd = performance.now();
 for (var i = 0; i < 1000000; i++) {
