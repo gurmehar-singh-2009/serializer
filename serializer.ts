@@ -58,7 +58,6 @@ class Serializer {
         return new Uint8Array(encoded);
     }
 
-	// TODO: add type declarations for this code block (i copied method from wikipedia :( )
 	decodeInteger(data: Uint8Array): decodeResult {
 		let result = 0;
 		let shift = 0;
