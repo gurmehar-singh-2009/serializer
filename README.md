@@ -30,7 +30,7 @@ To install and use SSR in your project:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/d1skidder/SSR.git
+   git clone https://github.com/gurmehar-singh-2009/SSR.git
    ```
 2. Import the repository library:
    ```js
