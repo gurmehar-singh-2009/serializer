@@ -4,13 +4,13 @@ import serializer from "./serializer";
 // encode speed test
 const msgpackstart = performance.now();
 for(let i = 0; i < 1000000; i++) {
-    msgpack.encode("mashallah");
+    msgpack.encode("Test data.");
 }
 console.log(`msgpack-lite encode speed ${(performance.now() - msgpackstart)}ms`);
 
 const mystart = performance.now();
 for(let i = 0; i < 1000000; i++) {
-    serializer.encode("mashallah");
+    serializer.encode("Test data.");
 }
 console.log(`my encode speed ${(performance.now() - mystart)}ms`);
 
