@@ -19,8 +19,8 @@ console.log(`msgpack-lite encode size ${msgpack.encode("mashallah").length} byte
 
 console.log(`my encode size ${serializer.encode("mashallah").length} bytes`);
 
-const mss = msgpack.encode("mashallah");
-const myy = serializer.encode("mashallah");
+const mss = msgpack.encode("Test data.");
+const myy = serializer.encode("Test data.");
 
 // decode speed test
 const msgpackstartd = performance.now();
